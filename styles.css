@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: #16161A;
+    color: #ffffff;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 3.4rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.typed-text{
+    color: #6246EA;
+}
+
+.cursor{
+    display: inline-block;
+    width: 2px;
+    background-color: lightgray;
+    margin-left: 0.5rem;
+    animation: blink 0.8s infinite;
+}
+
+.cursor.typing{
+    animation: none;
+}
+
+
+@keyframes blink{
+    0% {
+        background-color: lightgray;
+    }
+    50% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: lightgray;
+    }
+}
